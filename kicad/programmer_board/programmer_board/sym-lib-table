@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name drekkar_com)(type Legacy)(uri /home/henrik/git/esp32_projects/kicad/transistor_board/transistor_board/drekkar_com.lib)(options "")(descr ""))
+)

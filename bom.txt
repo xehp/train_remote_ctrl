@@ -1,0 +1,34 @@
+
+
+
+DRV8872DDAR‎
+digikey:296-42661-1-ND‎
+
+
+
+
+IC MOTOR DRIVER 8V-40V 8SOIC
+digikey:620-1428-1-ND‎
+
+
+
+
+
+‎MOSFET N-CH 100V 10A TO-220AB
+digikey:IRL520NPBF-ND‎
+
+
+
+
+
+
+IC LI-ION/LI-POLY CTRLR 10MSOP
+digikey:MCP73833-AMI/UN-ND
+
+
+
+
+
+
+SSR RELAY SPST-NO 2A 0-40V
+digikey:‎Z5417-ND‎
