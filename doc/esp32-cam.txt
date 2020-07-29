@@ -1,0 +1,114 @@
+https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/
+
+
+
+HW
+	Connect GND, 3.3Volt and Serial port at GPIO1/U0T (transmit) & GPIO3/U0R (receive).
+		So using my red opto-coupled FTDI box: yellow - U0T, white - U0R, blue - GND, red - 3.3V.
+	To enable download connect GPIO0/IO0 to GND.
+
+
+	Alternatively, power it on 5 Volt and take 3.3 Volt from P_OUT to power the serial port opto coupler.
+
+
+
+https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/linux-setup.html
+	sudo apt-get install git wget flex bison gperf python python-pip python-setuptools cmake ninja-build ccache libffi-dev libssl-dev dfu-util
+
+Old python above will work on Ubuntu 18.04 but perhaps not later versions. 
+
+
+https://stackoverflow.com/questions/35216344/make-cant-find-curses-h
+	sudo apt-get install libncurses5-dev libncursesw5-dev
+
+
+https://robotzero.one/esp32-camera-module/
+	sudo -H python2.7 -m pip install -r  ~/esp/esp-who/esp-idf/requirements.txt
+
+
+
+
+cd ~/esp
+	git clone --recursive https://github.com/espressif/esp-who.git
+
+cd ~/esp/esp-who/esp-idf
+	./install.sh
+	. ./export.sh
+
+
+	Remember to do ". ./export.sh" each time (not just once).
+
+
+cd ~/esp/esp-who/examples/single_chip/camera_web_server/
+	make menuconfig
+
+Serial flasher config —> Default serial port -> /dev/ttyUSB0
+						115200
+
+Camera Web Server —> WiFi Settings —> (Add your WiFi SSID and Password)
+
+Camera Web Server —> Camera Pins —> Select Camera Pinout —> (Select ESP32-CAM by AI-Thinker)
+
+Component config —> ESP32-specific —> SPI Ram config —> Type of SPI RAM chip (Select Auto-detect)
+
+Save
+
+
+idf.py -p /dev/ttyUSB0 flash
+idf.py -p /dev/ttyUSB0 -b 115200 flash
+
+
+
+
+
+
+
+Using external antenna (do not need it now)
+	https://randomnerdtutorials.com/esp32-cam-connect-external-antenna/
+
+
+GPIO
+	https://randomnerdtutorials.com/esp32-cam-ai-thinker-pinout/
+
+
+	Test the bright white LED
+
+		void setup() {
+		  pinMode(4, OUTPUT);
+		}
+
+		void loop() {
+		  pinMode(4, LOW);
+		}
+
+	Red LED on IO/GPIO 33 can be used to identify the chip.
+
+
+
+
+
+	HW board
+		5 Volt voltage power (from 18 Volt AC in).
+
+		IO pins to use: Transisors to drive motor.
+			Transistors on IO/GPIO 12, 13, 14, 15.
+			Headlight on IO/GPIO 2.
+			If some additional input is needed use GPIO 16.
+
+
+
+	Software
+		The camera is OV2640 so we need to look at file 
+		.../esp-who/examples/single_chip/camera_web_server/main/www/index_ov2640.html/index_ov2640.html	
+
+		Hide some controls we do not need and add controls for the motor.
+		Or when Toggle OV2640 settings is pressed bring up a train control settings.
+
+
+		In file "app_httpd.c" there is a method index_handler
+
+
+
+
+
+
