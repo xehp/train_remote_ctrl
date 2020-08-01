@@ -85,34 +85,8 @@ F 3 "" H 4750 6450 60  0000 C CNN
 	1    4750 6450
 	1    0    0    -1  
 $EndComp
-$Comp
-L pspice:C C2
-U 1 1 5F221454
-P 3050 6650
-F 0 "C2" H 3228 6696 50  0000 L CNN
-F 1 "C" H 3228 6605 50  0000 L CNN
-F 2 "" H 3050 6650 50  0001 C CNN
-F 3 "~" H 3050 6650 50  0001 C CNN
-	1    3050 6650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR02
-U 1 1 5F22278D
-P 3050 7100
-F 0 "#PWR02" H 3050 6850 50  0001 C CNN
-F 1 "GND" H 3055 6927 50  0000 C CNN
-F 2 "" H 3050 7100 50  0001 C CNN
-F 3 "" H 3050 7100 50  0001 C CNN
-	1    3050 7100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3050 7100 3050 6900
 Wire Wire Line
 	3050 6150 3950 6150
-Wire Wire Line
-	3050 6400 3050 6150
 $Comp
 L pspice:C C1
 U 1 1 5F223998
@@ -209,7 +183,7 @@ Wire Wire Line
 Wire Wire Line
 	3650 5500 8050 5500
 Wire Wire Line
-	8050 5500 8050 1200
+	8050 5500 8050 1850
 Wire Wire Line
 	8050 1200 7650 1200
 Wire Wire Line
@@ -517,10 +491,10 @@ Connection ~ 5400 3750
 Wire Wire Line
 	5400 3750 5400 3850
 $Comp
-L Connector_Generic:Conn_01x12 J?
+L Connector_Generic:Conn_01x12 J1
 U 1 1 5F29655C
 P 3500 3450
-F 0 "J?" H 3418 2625 50  0000 C CNN
+F 0 "J1" H 3418 2625 50  0000 C CNN
 F 1 "Conn_01x12" H 3418 2716 50  0000 C CNN
 F 2 "" H 3500 3450 50  0001 C CNN
 F 3 "~" H 3500 3450 50  0001 C CNN
@@ -555,4 +529,34 @@ Wire Wire Line
 Wire Wire Line
 	4000 3450 4000 3050
 Connection ~ 4000 3450
+$Comp
+L Device:R R3
+U 1 1 5F258BB6
+P 8400 1550
+F 0 "R3" H 8470 1596 50  0000 L CNN
+F 1 "R" H 8470 1505 50  0000 L CNN
+F 2 "" V 8330 1550 50  0001 C CNN
+F 3 "~" H 8400 1550 50  0001 C CNN
+	1    8400 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 1400 8400 1100
+Wire Wire Line
+	8400 1100 8050 1100
+Connection ~ 8050 1100
+Wire Wire Line
+	8400 1700 8400 1850
+Wire Wire Line
+	8400 1850 8050 1850
+Connection ~ 8050 1850
+Wire Wire Line
+	8050 1850 8050 1200
+Wire Wire Line
+	5400 3850 5400 5250
+Wire Wire Line
+	5400 5250 3050 5250
+Wire Wire Line
+	3050 5250 3050 6150
+Connection ~ 5400 3850
 $EndSCHEMATC

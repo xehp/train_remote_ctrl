@@ -209,7 +209,7 @@ Wire Wire Line
 Wire Wire Line
 	3650 5500 8050 5500
 Wire Wire Line
-	8050 5500 8050 1200
+	8050 5500 8050 1850
 Wire Wire Line
 	8050 1200 7650 1200
 Wire Wire Line
@@ -512,15 +512,15 @@ Connection ~ 4150 3850
 Wire Wire Line
 	4150 3850 4750 3850
 Wire Wire Line
-	5400 3750 3700 3750
+	5400 3750 4000 3750
 Connection ~ 5400 3750
 Wire Wire Line
 	5400 3750 5400 3850
 $Comp
-L Connector_Generic:Conn_01x12 J?
+L Connector_Generic:Conn_01x12 J1
 U 1 1 5F29655C
 P 3500 3450
-F 0 "J?" H 3418 2625 50  0000 C CNN
+F 0 "J1" H 3418 2625 50  0000 C CNN
 F 1 "Conn_01x12" H 3418 2716 50  0000 C CNN
 F 2 "" H 3500 3450 50  0001 C CNN
 F 3 "~" H 3500 3450 50  0001 C CNN
@@ -536,8 +536,6 @@ Wire Wire Line
 Wire Wire Line
 	6000 3150 3700 3150
 Wire Wire Line
-	4000 3950 4000 3450
-Wire Wire Line
 	4000 3050 3700 3050
 Wire Wire Line
 	3700 3250 6900 3250
@@ -549,7 +547,42 @@ Wire Wire Line
 	6650 3350 6650 4400
 Wire Wire Line
 	3700 3450 4000 3450
-Connection ~ 4000 3450
+Wire Wire Line
+	4000 3450 4000 3750
+Connection ~ 4000 3750
+Wire Wire Line
+	4000 3750 3700 3750
 Wire Wire Line
 	4000 3450 4000 3050
+Connection ~ 4000 3450
+$Comp
+L Device:R R3
+U 1 1 5F258BB6
+P 8400 1550
+F 0 "R3" H 8470 1596 50  0000 L CNN
+F 1 "R" H 8470 1505 50  0000 L CNN
+F 2 "" V 8330 1550 50  0001 C CNN
+F 3 "~" H 8400 1550 50  0001 C CNN
+	1    8400 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 1400 8400 1100
+Wire Wire Line
+	8400 1100 8050 1100
+Connection ~ 8050 1100
+Wire Wire Line
+	8400 1700 8400 1850
+Wire Wire Line
+	8400 1850 8050 1850
+Connection ~ 8050 1850
+Wire Wire Line
+	8050 1850 8050 1200
+Wire Wire Line
+	5400 3850 5400 5250
+Wire Wire Line
+	5400 5250 3050 5250
+Wire Wire Line
+	3050 5250 3050 6150
+Connection ~ 5400 3850
 $EndSCHEMATC
