@@ -1,5 +1,25 @@
 
 
+J1
+
+	pin
+	1 Neg/Gnd to capacitors
+	2 Pos to capacitors
+	3 Lamps common (pos)
+	4 Motor A
+	5 Motor B
+	6 Lamps common (pos)
+	7 Lamp forward
+	8 Lamp backward
+	9 Siren neg
+	10 Siren (pos)
+	11 AC (shoe/pantograf)
+	12 AC (chassi)
+
+
+
+
+
 U1
 	IC MOTOR DRVR UNIPLR 8SO PWRPAD
 	digikey:296-42661-1-ND

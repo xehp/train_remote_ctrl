@@ -1,0 +1,113 @@
+
+
+
+
+J1
+
+	pin
+	1 Neg/Gnd to capacitors
+	2 Pos to capacitors
+	3 Motor common (pos)
+	4 Motor forward
+	5 Motor backward
+	6 Lamps common (pos)
+	7 Lamp forward
+	8 Lamp backward
+	9 AC (shoe/pantograf)
+	10 AC (chassi)
+
+
+J2
+	1 Siren neg/gnd
+	2 Siren pos
+
+
+
+U1
+	IC MOTOR DRVR UNIPLR 8SO PWRPAD
+	digikey:296-42661-1-ND
+
+
+
+U2
+	ESP32-CAM
+
+
+
+		IO pins to use: 
+			old
+				Transisors to drive motor.
+				Transistors on IO/GPIO 12, 13, 14, 15.
+				Headlight on IO/GPIO 2.
+				If some additional input is needed use GPIO 16.
+			current
+				Motor PWM to U1 on IO/GPIO 12, 13
+				Fault signal from U1 on IO/GPIO 16
+				Lights on IO/GPIO 14, 15
+				sound on IO/GPIO 2
+				
+
+
+
+D1
+	BRIDGE RECT 1PHASE 50V 2A MBS
+	digikey:1655-1886-1-ND
+
+
+D2, D3
+	DIODE ARRAY GP 100V 215MA SOT23
+	digikey:1727-2912-1-ND
+
+
+Q1, Q2, Q3, q4
+	MOSFET N-CH 30V 5A SOT23
+	digikey:IRLML6344TRPBFCT-ND
+
+
+
+
+R1
+	RES SMD 1 OHM 5% 3W 2512
+	digikey:A121177CT-ND
+
+
+	Or just perhaps use same as R1
+
+
+
+R2
+	RES 0.22 OHM 5% 1W 2512
+	digikey:CRL2512-JW-R220ELFCT-ND
+
+
+R3
+	10 kOhm
+
+
+
+
+C1,C3,C4,C5,C6
+	CAP CER 0.1UF 50V X7R 0402
+	digikey:490-13342-1-ND
+
+U5
+	DC DC CONVERTER 3.3V 2W
+	digikey:945-1661-5-ND
+
+
+
+
+
+Super capacitors
+	As large as will fit (8 in series), from the following:
+		
+		CAPACITOR 1F -10% +30% 2.7V TH
+		digikey:1572-1758-ND
+
+		CAPACITOR 10F -10% +30% 2.7V TH
+		digikey:1572-1759-ND
+
+		CAP 100F -10% +20% 2.7V T/H
+		digikey:2085-TPL-100/22X45F-ND
+
+		
