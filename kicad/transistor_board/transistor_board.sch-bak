@@ -30,7 +30,7 @@ U 1 1 5F218132
 P 4900 2500
 F 0 "D1" H 5244 2546 50  0000 L CNN
 F 1 "D_Bridge_+-AA" H 5244 2455 50  0000 L CNN
-F 2 "Diode_SMD:Diode_Bridge_Vishay_MBLS" H 4900 2500 50  0001 C CNN
+F 2 "Diode_SMD:Diode_Bridge_Vishay_DFS" H 4900 2500 50  0001 C CNN
 F 3 "~" H 4900 2500 50  0001 C CNN
 	1    4900 2500
 	1    0    0    -1  

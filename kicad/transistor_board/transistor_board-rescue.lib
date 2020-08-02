@@ -1,55 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# drekkar_com_ESP32-cam
+# C-Device
 #
-DEF drekkar_com_ESP32-cam U 0 40 Y Y 1 F N
-F0 "U" 0 600 50 H V C CNN
-F1 "drekkar_com_ESP32-cam" 50 -400 50 H V C CNN
-F2 "" -850 1650 50 H I C CNN
-F3 "" -850 1650 50 H I C CNN
-DRAW
-S -450 500 450 -700 0 1 0 N
-S -350 -650 -350 -450 0 1 0 N
-S -350 -450 -250 -450 0 1 0 N
-S -250 -650 -150 -650 0 1 0 N
-S -250 -450 -250 -650 0 1 0 N
-S -150 -650 -150 -450 0 1 0 N
-S -150 -450 -50 -450 0 1 0 N
-S -50 -650 50 -650 0 1 0 N
-S -50 -450 -50 -650 0 1 0 N
-S 50 -650 50 -450 0 1 0 N
-S 50 -450 50 -450 0 1 0 N
-S 50 -450 150 -450 0 1 0 N
-S 150 -650 250 -650 0 1 0 N
-S 150 -450 150 -650 0 1 0 N
-S 250 -650 250 -450 0 1 0 N
-S 250 -450 350 -450 0 1 0 N
-S 350 -450 350 -650 0 1 0 N
-X 5V 1 -550 400 100 R 50 50 1 1 W
-X U0T 10 550 -200 100 L 50 50 1 1 O
-X U0R 11 550 -100 100 L 50 50 1 1 I
-X VCC 12 550 0 100 L 50 50 1 1 w
-X GND 13 550 100 100 L 50 50 1 1 W
-X IO0 14 550 200 100 L 50 50 1 1 B
-X IO16 15 550 300 100 L 50 50 1 1 B
-X 3V3 16 550 400 100 L 50 50 1 1 w
-X GND 2 -550 300 100 R 50 50 1 1 W
-X IO12 3 -550 200 100 R 50 50 1 1 B
-X IO13 4 -550 100 100 R 50 50 1 1 B
-X IO4 4 -550 -300 100 R 50 50 1 1 B
-X IO15 5 -550 0 100 R 50 50 1 1 B
-X IO14 6 -550 -100 100 R 50 50 1 1 B
-X IO2 7 -550 -200 100 R 50 50 1 1 B
-X GND 9 550 -300 100 L 50 50 1 1 W
-ENDDRAW
-ENDDEF
-#
-# transistor_board-rescue_C-Device
-#
-DEF transistor_board-rescue_C-Device C 0 10 N Y 1 F N
+DEF C-Device C 0 10 N Y 1 F N
 F0 "C" 25 100 50 H V L CNN
-F1 "transistor_board-rescue_C-Device" 25 -100 50 H V L CNN
+F1 "C-Device" 25 -100 50 H V L CNN
 F2 "" 38 -150 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -63,11 +19,11 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# transistor_board-rescue_Conn_01x02-Connector_Generic
+# Conn_01x02-Connector_Generic
 #
-DEF transistor_board-rescue_Conn_01x02-Connector_Generic J 0 40 Y N 1 F N
+DEF Conn_01x02-Connector_Generic J 0 40 Y N 1 F N
 F0 "J" 0 100 50 H V C CNN
-F1 "transistor_board-rescue_Conn_01x02-Connector_Generic" 0 -200 50 H V C CNN
+F1 "Conn_01x02-Connector_Generic" 0 -200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -82,11 +38,11 @@ X Pin_2 2 -200 -100 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# transistor_board-rescue_Conn_01x10-Connector_Generic
+# Conn_01x10-Connector_Generic
 #
-DEF transistor_board-rescue_Conn_01x10-Connector_Generic J 0 40 Y N 1 F N
+DEF Conn_01x10-Connector_Generic J 0 40 Y N 1 F N
 F0 "J" 0 500 50 H V C CNN
-F1 "transistor_board-rescue_Conn_01x10-Connector_Generic" 0 -600 50 H V C CNN
+F1 "Conn_01x10-Connector_Generic" 0 -600 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -117,11 +73,11 @@ X Pin_9 9 -200 -400 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# transistor_board-rescue_D_Bridge_+-AA-Device
+# D_Bridge_+-AA-Device
 #
-DEF transistor_board-rescue_D_Bridge_+-AA-Device D 0 0 Y Y 1 F N
+DEF D_Bridge_+-AA-Device D 0 0 Y Y 1 F N
 F0 "D" 100 275 50 H V L CNN
-F1 "transistor_board-rescue_D_Bridge_+-AA-Device" 100 200 50 H V L CNN
+F1 "D_Bridge_+-AA-Device" 100 200 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -149,11 +105,11 @@ X ~~ 4 0 -300 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# transistor_board-rescue_D_x2_KCom_AAK-Device
+# D_x2_KCom_AAK-Device
 #
-DEF transistor_board-rescue_D_x2_KCom_AAK-Device D 0 30 Y N 1 F N
+DEF D_x2_KCom_AAK-Device D 0 30 Y N 1 F N
 F0 "D" 50 -100 50 H V C CNN
-F1 "transistor_board-rescue_D_x2_KCom_AAK-Device" 0 100 50 H V C CNN
+F1 "D_x2_KCom_AAK-Device" 0 100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -170,11 +126,11 @@ X K 3 0 -200 100 U 50 50 0 1 P
 ENDDRAW
 ENDDEF
 #
-# transistor_board-rescue_GND-power
+# GND-power
 #
-DEF transistor_board-rescue_GND-power #PWR 0 0 Y Y 1 F P
+DEF GND-power #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -250 50 H I C CNN
-F1 "transistor_board-rescue_GND-power" 0 -150 50 H V C CNN
+F1 "GND-power" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -183,11 +139,11 @@ X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# transistor_board-rescue_LM7805_TO220-Regulator_Linear
+# LM7805_TO220-Regulator_Linear
 #
-DEF transistor_board-rescue_LM7805_TO220-Regulator_Linear U 0 10 Y Y 1 F N
+DEF LM7805_TO220-Regulator_Linear U 0 10 Y Y 1 F N
 F0 "U" -150 125 50 H V C CNN
-F1 "transistor_board-rescue_LM7805_TO220-Regulator_Linear" 0 125 50 H V L CNN
+F1 "LM7805_TO220-Regulator_Linear" 0 125 50 H V L CNN
 F2 "Package_TO_SOT_THT:TO-220-3_Vertical" 0 225 50 H I C CIN
 F3 "" 0 -50 50 H I C CNN
 $FPLIST
@@ -201,11 +157,11 @@ X VO 3 300 0 100 L 50 50 1 1 w
 ENDDRAW
 ENDDEF
 #
-# transistor_board-rescue_MMBF170-Transistor_FET
+# MMBF170-Transistor_FET
 #
-DEF transistor_board-rescue_MMBF170-Transistor_FET Q 0 20 Y N 1 F N
+DEF MMBF170-Transistor_FET Q 0 20 Y N 1 F N
 F0 "Q" 200 75 50 H V L CNN
-F1 "transistor_board-rescue_MMBF170-Transistor_FET" 200 0 50 H V L CNN
+F1 "MMBF170-Transistor_FET" 200 0 50 H V L CNN
 F2 "Package_TO_SOT_SMD:SOT-23" 200 -75 50 H I L CIN
 F3 "" 0 0 50 H I L CNN
 $FPLIST
@@ -232,11 +188,11 @@ X D 3 100 200 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# transistor_board-rescue_R-Device
+# R-Device
 #
-DEF transistor_board-rescue_R-Device R 0 0 N Y 1 F N
+DEF R-Device R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
-F1 "transistor_board-rescue_R-Device" 0 0 50 V V C CNN
+F1 "R-Device" 0 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
