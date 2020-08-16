@@ -70,23 +70,14 @@ R1
 	RES SMD 1 OHM 5% 3W 2512
 	digikey:A121177CT-ND
 
-
-	Or just perhaps use same as R1
-
-
-
-R2
 	RES 0.22 OHM 5% 1W 2512
 	digikey:CRL2512-JW-R220ELFCT-ND
 
 
-R3
-	10 kOhm
 
 
 
-
-C1,C3,C4,C5,C6
+C3,C4,C5,C6
 	CAP CER 0.1UF 50V Y5V 0805
 	digikey:478-1421-1-ND‎
 

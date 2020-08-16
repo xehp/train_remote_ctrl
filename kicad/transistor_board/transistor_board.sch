@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "2020-07-29"
+Date "2020-08-16"
 Rev ""
 Comp ""
 Comment1 ""
@@ -19,7 +19,7 @@ U 1 1 5F16A753
 P 7150 1450
 F 0 "U2" H 7150 2115 50  0000 C CNN
 F 1 "ESP32-cam" H 7150 2024 50  0000 C CNN
-F 2 "transistor_board:ESP32-CAM" H 6300 3100 50  0001 C CNN
+F 2 "eit_footprints:ESP32-CAM_12pin" H 6300 3100 50  0001 C CNN
 F 3 "" H 6300 3100 50  0001 C CNN
 	1    7150 1450
 	1    0    0    -1  
@@ -544,4 +544,26 @@ Wire Wire Line
 	7250 3000 7250 3050
 Wire Wire Line
 	6200 2900 7500 2900
+$Comp
+L transistor_board-rescue:GND-power #PWR?
+U 1 1 5F39AC86
+P 8000 1400
+F 0 "#PWR?" H 8000 1150 50  0001 C CNN
+F 1 "GND" H 8005 1227 50  0000 C CNN
+F 2 "" H 8000 1400 50  0001 C CNN
+F 3 "" H 8000 1400 50  0001 C CNN
+	1    8000 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 1400 8000 1350
+Wire Wire Line
+	8000 1350 7700 1350
+NoConn ~ 6600 1750
+NoConn ~ 7700 1250
+NoConn ~ 7700 1150
+NoConn ~ 7700 1450
+NoConn ~ 7700 1550
+NoConn ~ 7700 1650
+NoConn ~ 7700 1750
 $EndSCHEMATC
