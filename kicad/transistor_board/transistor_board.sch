@@ -545,10 +545,10 @@ Wire Wire Line
 Wire Wire Line
 	6200 2900 7500 2900
 $Comp
-L transistor_board-rescue:GND-power #PWR?
+L transistor_board-rescue:GND-power #PWR04
 U 1 1 5F39AC86
 P 8000 1400
-F 0 "#PWR?" H 8000 1150 50  0001 C CNN
+F 0 "#PWR04" H 8000 1150 50  0001 C CNN
 F 1 "GND" H 8005 1227 50  0000 C CNN
 F 2 "" H 8000 1400 50  0001 C CNN
 F 3 "" H 8000 1400 50  0001 C CNN
@@ -560,10 +560,25 @@ Wire Wire Line
 Wire Wire Line
 	8000 1350 7700 1350
 NoConn ~ 6600 1750
-NoConn ~ 7700 1250
 NoConn ~ 7700 1150
 NoConn ~ 7700 1450
 NoConn ~ 7700 1550
 NoConn ~ 7700 1650
 NoConn ~ 7700 1750
+$Comp
+L transistor_board-rescue:Conn_01x02-Connector_Generic J3
+U 1 1 5F39F718
+P 8450 1350
+F 0 "J3" H 8368 1025 50  0000 C CNN
+F 1 "Conn_01x02" H 8368 1116 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8450 1350 50  0001 C CNN
+F 3 "~" H 8450 1350 50  0001 C CNN
+	1    8450 1350
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	8250 1350 8000 1350
+Connection ~ 8000 1350
+Wire Wire Line
+	8250 1250 7700 1250
 $EndSCHEMATC
