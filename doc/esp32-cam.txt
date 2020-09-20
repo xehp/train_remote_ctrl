@@ -46,9 +46,8 @@ Serial flasher config —> Default serial port -> /dev/ttyUSB0
 						115200
 
 Camera Web Server —> WiFi Settings —> (Add your WiFi SSID and Password)
-
 Camera Web Server —> Camera Pins —> Select Camera Pinout —> (Select ESP32-CAM by AI-Thinker)
-
+Camera Web Server —> LED Illuminator -> enable
 Component config —> ESP32-specific —> SPI Ram config —> Type of SPI RAM chip (Select Auto-detect)
 
 Save
