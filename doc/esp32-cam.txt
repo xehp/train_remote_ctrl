@@ -46,9 +46,8 @@ Serial flasher config —> Default serial port -> /dev/ttyUSB0
 						115200
 
 Camera Web Server —> WiFi Settings —> (Add your WiFi SSID and Password)
-
 Camera Web Server —> Camera Pins —> Select Camera Pinout —> (Select ESP32-CAM by AI-Thinker)
-
+Camera Web Server —> LED Illuminator -> enable
 Component config —> ESP32-specific —> SPI Ram config —> Type of SPI RAM chip (Select Auto-detect)
 
 Save
@@ -58,8 +57,16 @@ idf.py -p /dev/ttyUSB0 flash
 idf.py -p /dev/ttyUSB0 -b 115200 flash
 
 
+If it will not compile try:
+idf.py fullclean
+And remember to do config above again.
 
 
+
+If something still does not work perhaps out of memory, try change log verbosity to error.
+Bootloader log verbosity
+
+Try to reduce SPI flash speed from 80 to 40 MHz
 
 
 
