@@ -59,10 +59,19 @@ D2, D3
 	digikey:1727-2912-1-ND
 
 
-Q1, Q2, Q3, q4
+Q1, Q2
+	Tried to use digikey:IRLML6344TRPBFCT-ND here but those failed.
+
+	Perhaps something like this:
+		D-Pak (TO252AA)
+		digikey:IRFR3410TRLPBFCT-ND
+	
+
+Q3, Q4
 	MOSFET N-CH 30V 5A SOT23
 	digikey:IRLML6344TRPBFCT-ND
 
+	These where not powerfull enough to drive the motor. Only lights.
 
 
 

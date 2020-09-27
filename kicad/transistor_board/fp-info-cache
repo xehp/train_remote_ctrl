@@ -1,4 +1,4 @@
-36593954642529
+36597621758529
 eit_footprints
 Adafruit_1i54_display
 
@@ -14,12 +14,12 @@ DC-DC_CUI_PDQE20-D
 6
 6
 eit_footprints
-ESP32-CAM_12pin
+ESP32-CAM
 
 
 0
-12
-12
+16
+16
 eit_footprints
 Fuse_holder_6p3x32mm
 

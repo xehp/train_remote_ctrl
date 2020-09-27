@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "2020-08-16"
+Date "2020-09-15"
 Rev ""
 Comp ""
 Comment1 ""
@@ -19,7 +19,7 @@ U 1 1 5F16A753
 P 7150 1450
 F 0 "U2" H 7150 2115 50  0000 C CNN
 F 1 "ESP32-cam" H 7150 2024 50  0000 C CNN
-F 2 "eit_footprints:ESP32-CAM_12pin" H 6300 3100 50  0001 C CNN
+F 2 "eit_footprints:ESP32-CAM" H 6300 3100 50  0001 C CNN
 F 3 "" H 6300 3100 50  0001 C CNN
 	1    7150 1450
 	1    0    0    -1  
@@ -92,8 +92,6 @@ F 3 "https://www.diodes.com/assets/Datasheets/ds30104.pdf" H 7150 3750 50  0001 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6200 2900 6200 1650
-Wire Wire Line
 	6600 1450 6100 1450
 Wire Wire Line
 	6100 1450 6100 3000
@@ -103,17 +101,6 @@ Wire Wire Line
 	6500 3000 6500 3750
 Wire Wire Line
 	6500 3750 6950 3750
-$Comp
-L transistor_board-rescue:GND-power #PWR06
-U 1 1 5F260D53
-P 7250 3050
-F 0 "#PWR06" H 7250 2800 50  0001 C CNN
-F 1 "GND" H 7255 2877 50  0000 C CNN
-F 2 "" H 7250 3050 50  0001 C CNN
-F 3 "" H 7250 3050 50  0001 C CNN
-	1    7250 3050
-	1    0    0    -1  
-$EndComp
 $Comp
 L transistor_board-rescue:GND-power #PWR07
 U 1 1 5F261517
@@ -246,20 +233,18 @@ Wire Wire Line
 Wire Wire Line
 	7700 1050 8050 1050
 Wire Wire Line
-	8050 1050 8050 900 
+	8050 1050 8050 700 
 Wire Wire Line
-	8050 900  8800 900 
+	8050 700  8800 700 
 Wire Wire Line
-	8800 900  8800 1000
-Wire Wire Line
-	8050 900  8050 700 
+	8800 700  8800 1000
 Wire Wire Line
 	8050 700  4950 700 
 Wire Wire Line
 	4950 700  4950 850 
 Wire Wire Line
 	4950 850  4850 850 
-Connection ~ 8050 900 
+Connection ~ 8050 700 
 $Comp
 L transistor_board-rescue:GND-power #PWR011
 U 1 1 5F30F2B4
@@ -366,7 +351,7 @@ U 1 1 5F261E90
 P 9050 3250
 F 0 "Q2" H 9254 3296 50  0000 L CNN
 F 1 "MMBF170" H 9254 3205 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 9250 3175 50  0001 L CIN
+F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin2" H 9250 3175 50  0001 L CIN
 F 3 "https://www.diodes.com/assets/Datasheets/ds30104.pdf" H 9050 3250 50  0001 L CNN
 	1    9050 3250
 	1    0    0    -1  
@@ -377,7 +362,7 @@ U 1 1 5F263B9D
 P 9050 4150
 F 0 "Q1" H 9254 4196 50  0000 L CNN
 F 1 "MMBF170" H 9254 4105 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 9250 4075 50  0001 L CIN
+F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin2" H 9250 4075 50  0001 L CIN
 F 3 "https://www.diodes.com/assets/Datasheets/ds30104.pdf" H 9050 4150 50  0001 L CNN
 	1    9050 4150
 	1    0    0    -1  
@@ -447,8 +432,6 @@ Wire Wire Line
 	6300 1550 6600 1550
 Wire Wire Line
 	6300 1550 6300 4700
-Wire Wire Line
-	6600 1650 6200 1650
 $Comp
 L transistor_board-rescue:Conn_01x10-Connector_Generic J1
 U 1 1 5F26F492
@@ -527,6 +510,21 @@ Wire Wire Line
 	8500 5200 8450 5200
 Wire Wire Line
 	8500 3450 8500 5200
+NoConn ~ 6600 1750
+NoConn ~ 7700 1450
+NoConn ~ 7700 1550
+NoConn ~ 7700 1650
+NoConn ~ 7700 1750
+Wire Wire Line
+	6600 1650 6200 1650
+Wire Wire Line
+	6200 2900 6200 1650
+Wire Wire Line
+	6200 2900 7500 2900
+Wire Wire Line
+	7250 3000 7250 3050
+Wire Wire Line
+	7500 3000 7250 3000
 $Comp
 L transistor_board-rescue:Conn_01x02-Connector_Generic J2
 U 1 1 5F30B63D
@@ -538,47 +536,68 @@ F 3 "~" H 7700 3000 50  0001 C CNN
 	1    7700 3000
 	1    0    0    1   
 $EndComp
-Wire Wire Line
-	7500 3000 7250 3000
-Wire Wire Line
-	7250 3000 7250 3050
-Wire Wire Line
-	6200 2900 7500 2900
+$Comp
+L transistor_board-rescue:GND-power #PWR06
+U 1 1 5F260D53
+P 7250 3050
+F 0 "#PWR06" H 7250 2800 50  0001 C CNN
+F 1 "GND" H 7255 2877 50  0000 C CNN
+F 2 "" H 7250 3050 50  0001 C CNN
+F 3 "" H 7250 3050 50  0001 C CNN
+	1    7250 3050
+	1    0    0    -1  
+$EndComp
+NoConn ~ 7700 1250
+$Comp
+L transistor_board-rescue:R-Device R3
+U 1 1 5F61F0F4
+P 8300 1600
+F 0 "R3" V 8200 1550 50  0000 L CNN
+F 1 "R" V 8300 1600 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 8230 1600 50  0001 C CNN
+F 3 "~" H 8300 1600 50  0001 C CNN
+	1    8300 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L transistor_board-rescue:R-Device R2
+U 1 1 5F620284
+P 8300 1150
+F 0 "R2" V 8200 1100 50  0000 L CNN
+F 1 "R" V 8300 1150 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 8230 1150 50  0001 C CNN
+F 3 "~" H 8300 1150 50  0001 C CNN
+	1    8300 1150
+	1    0    0    -1  
+$EndComp
 $Comp
 L transistor_board-rescue:GND-power #PWR04
-U 1 1 5F39AC86
-P 8000 1400
-F 0 "#PWR04" H 8000 1150 50  0001 C CNN
-F 1 "GND" H 8005 1227 50  0000 C CNN
-F 2 "" H 8000 1400 50  0001 C CNN
-F 3 "" H 8000 1400 50  0001 C CNN
-	1    8000 1400
+U 1 1 5F62EF8E
+P 8300 1850
+F 0 "#PWR04" H 8300 1600 50  0001 C CNN
+F 1 "GND" H 8305 1677 50  0000 C CNN
+F 2 "" H 8300 1850 50  0001 C CNN
+F 3 "" H 8300 1850 50  0001 C CNN
+	1    8300 1850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8000 1400 8000 1350
+	8300 1850 8300 1750
 Wire Wire Line
-	8000 1350 7700 1350
-NoConn ~ 6600 1750
-NoConn ~ 7700 1150
-NoConn ~ 7700 1450
-NoConn ~ 7700 1550
-NoConn ~ 7700 1650
-NoConn ~ 7700 1750
-$Comp
-L transistor_board-rescue:Conn_01x02-Connector_Generic J3
-U 1 1 5F39F718
-P 8450 1350
-F 0 "J3" H 8368 1025 50  0000 C CNN
-F 1 "Conn_01x02" H 8368 1116 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8450 1350 50  0001 C CNN
-F 3 "~" H 8450 1350 50  0001 C CNN
-	1    8450 1350
-	1    0    0    1   
-$EndComp
+	8300 1450 8300 1350
 Wire Wire Line
-	8250 1350 8000 1350
-Connection ~ 8000 1350
+	8300 1350 8000 1350
 Wire Wire Line
-	8250 1250 7700 1250
+	8000 1350 8000 1150
+Wire Wire Line
+	8000 1150 7700 1150
+Connection ~ 8300 1350
+Wire Wire Line
+	8300 1350 8300 1300
+Wire Wire Line
+	4150 850  4150 500 
+Wire Wire Line
+	4150 500  8300 500 
+Wire Wire Line
+	8300 500  8300 1000
 $EndSCHEMATC
