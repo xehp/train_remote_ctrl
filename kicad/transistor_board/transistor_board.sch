@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "2020-09-15"
+Date "2020-09-30"
 Rev ""
 Comp ""
 Comment1 ""
@@ -38,7 +38,7 @@ $EndComp
 Wire Wire Line
 	4450 2200 4900 2200
 Wire Wire Line
-	4900 2800 4900 3150
+	4900 2800 4900 3050
 Wire Wire Line
 	4600 2500 4550 2500
 Wire Wire Line
@@ -167,34 +167,6 @@ Wire Wire Line
 	5600 1300 5600 1150
 Wire Wire Line
 	5600 1150 6600 1150
-$Comp
-L transistor_board-rescue:C-Device C4
-U 1 1 5F2E553A
-P 5150 1100
-F 0 "C4" H 5265 1146 50  0000 L CNN
-F 1 "C" H 5265 1055 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5188 950 50  0001 C CNN
-F 3 "~" H 5150 1100 50  0001 C CNN
-	1    5150 1100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5600 1150 5450 1150
-Wire Wire Line
-	5450 1150 5450 1350
-Wire Wire Line
-	5450 1350 5150 1350
-Wire Wire Line
-	5150 1350 5150 1250
-Connection ~ 5600 1150
-Wire Wire Line
-	5150 950  5150 850 
-Wire Wire Line
-	5150 850  5450 850 
-Wire Wire Line
-	5450 850  5450 1050
-Wire Wire Line
-	5450 1050 6600 1050
 $Comp
 L transistor_board-rescue:LM7805_TO220-Regulator_Linear U3
 U 1 1 5F300908
@@ -325,12 +297,6 @@ Connection ~ 5400 3750
 Wire Wire Line
 	5400 3750 5400 3850
 Wire Wire Line
-	3650 3050 4450 3050
-Wire Wire Line
-	4450 2200 4450 3050
-Wire Wire Line
-	3650 3150 4900 3150
-Wire Wire Line
 	3650 3250 6600 3250
 Wire Wire Line
 	6600 3250 6600 3450
@@ -455,8 +421,6 @@ F 3 "~" H 9800 1800 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	5400 2250 8150 2250
-Wire Wire Line
 	9800 1600 9800 1450
 Wire Wire Line
 	9800 1450 9200 1450
@@ -480,73 +444,11 @@ Wire Wire Line
 	9150 3850 10100 3850
 Wire Wire Line
 	9350 2900 10200 2900
-$Comp
-L transistor_board-rescue:D_x2_KCom_AAK-Device D2
-U 1 1 5F29965A
-P 8150 5200
-F 0 "D2" H 8150 5323 50  0000 C CNN
-F 1 "D_x2_KCom_AAK" H 8150 5414 50  0000 C CNN
-F 2 "digikey-footprints:SOT-23-3" H 8150 5200 50  0001 C CNN
-F 3 "~" H 8150 5200 50  0001 C CNN
-	1    8150 5200
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	8150 5000 8150 2250
-Connection ~ 8150 2250
-Wire Wire Line
-	8150 2250 9200 2250
-Wire Wire Line
-	7250 4400 7800 4400
-Wire Wire Line
-	7800 4400 7800 5200
-Wire Wire Line
-	7800 5200 7850 5200
-Connection ~ 7250 4400
-Wire Wire Line
-	7250 3450 8500 3450
-Connection ~ 7250 3450
-Wire Wire Line
-	8500 5200 8450 5200
-Wire Wire Line
-	8500 3450 8500 5200
 NoConn ~ 6600 1750
 NoConn ~ 7700 1450
 NoConn ~ 7700 1550
 NoConn ~ 7700 1650
 NoConn ~ 7700 1750
-Wire Wire Line
-	6600 1650 6200 1650
-Wire Wire Line
-	6200 2900 6200 1650
-Wire Wire Line
-	6200 2900 7500 2900
-Wire Wire Line
-	7250 3000 7250 3050
-Wire Wire Line
-	7500 3000 7250 3000
-$Comp
-L transistor_board-rescue:Conn_01x02-Connector_Generic J2
-U 1 1 5F30B63D
-P 7700 3000
-F 0 "J2" H 7618 2675 50  0000 C CNN
-F 1 "Conn_01x02" H 7618 2766 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7700 3000 50  0001 C CNN
-F 3 "~" H 7700 3000 50  0001 C CNN
-	1    7700 3000
-	1    0    0    1   
-$EndComp
-$Comp
-L transistor_board-rescue:GND-power #PWR06
-U 1 1 5F260D53
-P 7250 3050
-F 0 "#PWR06" H 7250 2800 50  0001 C CNN
-F 1 "GND" H 7255 2877 50  0000 C CNN
-F 2 "" H 7250 3050 50  0001 C CNN
-F 3 "" H 7250 3050 50  0001 C CNN
-	1    7250 3050
-	1    0    0    -1  
-$EndComp
 NoConn ~ 7700 1250
 $Comp
 L transistor_board-rescue:R-Device R3
@@ -601,4 +503,14 @@ Wire Wire Line
 Wire Wire Line
 	8300 500  8300 1000
 NoConn ~ 7700 1350
+Wire Wire Line
+	4450 3150 3650 3150
+Wire Wire Line
+	4450 2200 4450 3150
+Wire Wire Line
+	3650 3050 4900 3050
+NoConn ~ 6600 1650
+Wire Wire Line
+	5400 2250 9200 2250
+NoConn ~ 6600 1050
 $EndSCHEMATC
