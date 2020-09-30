@@ -63,8 +63,9 @@ Q1, Q2
 	Tried to use digikey:IRLML6344TRPBFCT-ND here but those failed.
 
 	Perhaps something like this:
+		N-kanal 100V 10 A (Tc) 48W (Tc) Ytmontering D-Pak
 		D-Pak (TO252AA)
-		digikey:IRFR3410TRLPBFCT-ND
+		digikey:IRLR120NPBFTR-ND
 	
 
 Q3, Q4
