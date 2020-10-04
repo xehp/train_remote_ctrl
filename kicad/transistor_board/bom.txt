@@ -96,6 +96,23 @@ U5
 	digikey:945-1661-5-ND
 
 
+PCB
+	Plot to gerber (at least these files):
+	transistor_board-B_Cu.gbr
+	transistor_board-B_Mask.gbr
+	transistor_board-B_Paste.gbr
+	transistor_board-B_SilkS.gbr
+	transistor_board-Edge_Cuts.gbr
+	transistor_board-F_Cu.gbr
+	transistor_board-F_Mask.gbr
+	transistor_board-F_Paste.gbr
+	transistor_board-F_SilkS.gbr
+
+
+	These two probably not needed but I always sent them so not sure.
+	transistor_board-NPTH.drl
+	transistor_board-PTH.drl
+
 
 
 
