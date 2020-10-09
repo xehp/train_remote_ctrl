@@ -22,10 +22,10 @@ J2
 	2 Siren pos
 
 
-
-U1
-	IC MOTOR DRVR UNIPLR 8SO PWRPAD
-	digikey:296-42661-1-ND
+old
+	U1
+		IC MOTOR DRVR UNIPLR 8SO PWRPAD
+		digikey:296-42661-1-ND
 
 
 
@@ -65,7 +65,7 @@ Q1, Q2
 	Perhaps something like this:
 		N-kanal 100V 10 A (Tc) 48W (Tc) Ytmontering D-Pak
 		D-Pak (TO252AA)
-		digikey:IRLR120NPBFTR-ND
+		digikey:IRLR120NPBFCT-ND‎
 	
 
 Q3, Q4
@@ -80,8 +80,9 @@ R1
 	RES SMD 1 OHM 5% 3W 2512
 	digikey:A121177CT-ND
 
-	RES 0.22 OHM 5% 1W 2512
-	digikey:CRL2512-JW-R220ELFCT-ND
+	alternative:
+		RES 0.22 OHM 5% 1W 2512
+		digikey:CRL2512-JW-R220ELFCT-ND
 
 
 
@@ -114,6 +115,15 @@ PCB
 	transistor_board-PTH.drl
 
 
+R2
+	10 kOhm
+	digikey:RNCP0805FTD10K0CT-ND
+
+
+
+R3
+	1.8 kOhm
+	digikey:A129752CT-ND
 
 
 Super capacitors
