@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "2020-09-30"
+Date "2020-12-02"
 Rev ""
 Comp ""
 Comment1 ""
@@ -311,28 +311,6 @@ Wire Wire Line
 Connection ~ 4000 3750
 Wire Wire Line
 	4000 3750 3650 3750
-$Comp
-L transistor_board-rescue:MMBF170-Transistor_FET Q2
-U 1 1 5F261E90
-P 9050 3250
-F 0 "Q2" H 9254 3296 50  0000 L CNN
-F 1 "MMBF170" H 9254 3205 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin2" H 9250 3175 50  0001 L CIN
-F 3 "https://www.diodes.com/assets/Datasheets/ds30104.pdf" H 9050 3250 50  0001 L CNN
-	1    9050 3250
-	1    0    0    -1  
-$EndComp
-$Comp
-L transistor_board-rescue:MMBF170-Transistor_FET Q1
-U 1 1 5F263B9D
-P 9050 4150
-F 0 "Q1" H 9254 4196 50  0000 L CNN
-F 1 "MMBF170" H 9254 4105 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin2" H 9250 4075 50  0001 L CIN
-F 3 "https://www.diodes.com/assets/Datasheets/ds30104.pdf" H 9050 4150 50  0001 L CNN
-	1    9050 4150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5800 1250 5800 2450
 Wire Wire Line
@@ -432,7 +410,7 @@ Wire Wire Line
 	9350 1800 9350 2900
 Connection ~ 9350 2900
 Wire Wire Line
-	9350 2900 9150 2900
+	9350 2900 9250 2900
 Wire Wire Line
 	10100 1800 10450 1800
 Wire Wire Line
@@ -513,4 +491,60 @@ NoConn ~ 6600 1650
 Wire Wire Line
 	5400 2250 9200 2250
 NoConn ~ 6600 1050
+$Comp
+L Device:LED D2
+U 1 1 5F9420FF
+P 5200 1100
+F 0 "D2" V 5239 983 50  0000 R CNN
+F 1 "LED" V 5148 983 50  0000 R CNN
+F 2 "LED_THT:LED_D3.0mm" H 5200 1100 50  0001 C CNN
+F 3 "~" H 5200 1100 50  0001 C CNN
+	1    5200 1100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5200 950  5200 850 
+Wire Wire Line
+	5200 850  4950 850 
+Connection ~ 4950 850 
+$Comp
+L transistor_board-rescue:GND-power #PWR05
+U 1 1 5F9463A2
+P 5200 1300
+F 0 "#PWR05" H 5200 1050 50  0001 C CNN
+F 1 "GND" H 5205 1127 50  0000 C CNN
+F 2 "" H 5200 1300 50  0001 C CNN
+F 3 "" H 5200 1300 50  0001 C CNN
+	1    5200 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 1300 5200 1250
+$Comp
+L Device:Q_NIGBT_GCEC Q1
+U 1 1 606B90B8
+P 9050 3250
+F 0 "Q1" H 9338 3296 50  0000 L CNN
+F 1 "Q_NIGBT_GCEC" H 9338 3205 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin2" H 9250 3350 50  0001 C CNN
+F 3 "~" H 9050 3250 50  0001 C CNN
+	1    9050 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9250 3050 9250 2900
+Connection ~ 9250 2900
+Wire Wire Line
+	9250 2900 9150 2900
+$Comp
+L Device:Q_NIGBT_GCEC Q2
+U 1 1 606C00AA
+P 9050 4150
+F 0 "Q2" H 9338 4196 50  0000 L CNN
+F 1 "Q_NIGBT_GCEC" H 9338 4105 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin2" H 9250 4250 50  0001 C CNN
+F 3 "~" H 9050 4150 50  0001 C CNN
+	1    9050 4150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

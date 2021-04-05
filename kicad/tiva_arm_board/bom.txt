@@ -61,22 +61,20 @@ D3
 
 
 Q1, Q2
+	Tried to use digikey:IRLML6344TRPBFCT-ND here but those failed.
 
-	First try
-		Tried to use digikey:IRLML6344TRPBFCT-ND
-
-		Perhaps something like this:
-			N-kanal 100V 10 A (Tc) 48W (Tc) Ytmontering D-Pak
-			D-Pak (TO252AA)
-			digikey:IRLR120NPBFCT-ND‎
+	Perhaps something like this:
+		N-kanal 100V 10 A (Tc) 48W (Tc) Ytmontering D-Pak
+		D-Pak (TO252AA)
+		digikey:IRLR120NPBFCT-ND‎
 
 
 	
 	Or can we use an IGBT like this one?
 		IGBT  435V 25A 125W Ytmontering DPAK
 		digikey:497-17642-1-ND
-
-	Footprinty Package_TO_SOT_SMD:TO-252-3_TabPin2
+	Warning this one is not pin compatible with the one currently used!
+	!Or perhaps it is but the schematic is currently wrong!
 
 Q3, Q4
 	MOSFET N-CH 30V 5A SOT23
