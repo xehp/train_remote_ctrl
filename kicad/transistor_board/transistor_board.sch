@@ -14,17 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L drekkar_com:ESP32-cam U2
-U 1 1 5F16A753
-P 7150 1450
-F 0 "U2" H 7150 2115 50  0000 C CNN
-F 1 "ESP32-cam" H 7150 2024 50  0000 C CNN
-F 2 "eit_footprints:ESP32-CAM" H 6300 3100 50  0001 C CNN
-F 3 "" H 6300 3100 50  0001 C CNN
-	1    7150 1450
-	1    0    0    -1  
-$EndComp
-$Comp
 L transistor_board-rescue:D_Bridge_+-AA-Device D1
 U 1 1 5F218132
 P 4900 2500
@@ -60,7 +49,7 @@ Wire Wire Line
 	4000 4200 4000 3950
 Connection ~ 4000 3950
 Wire Wire Line
-	4000 3950 3650 3950
+	4000 3950 3000 3950
 Wire Wire Line
 	5200 2500 5400 2500
 $Comp
@@ -75,9 +64,9 @@ F 3 "~" H 4900 3850 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	6000 3650 3650 3650
+	6000 3650 3000 3650
 Wire Wire Line
-	6100 3550 3650 3550
+	6100 3550 3000 3550
 Wire Wire Line
 	6600 1250 5800 1250
 $Comp
@@ -183,8 +172,8 @@ L transistor_board-rescue:C-Device C5
 U 1 1 5F3038BA
 P 8800 1150
 F 0 "C5" H 8915 1196 50  0000 L CNN
-F 1 "C" H 8915 1105 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8838 1000 50  0001 C CNN
+F 1 "1 uF" H 8915 1105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8838 1000 50  0001 C CNN
 F 3 "~" H 8800 1150 50  0001 C CNN
 	1    8800 1150
 	1    0    0    -1  
@@ -230,17 +219,6 @@ F 3 "" H 4550 1250 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4550 1150 4550 1250
-$Comp
-L transistor_board-rescue:C-Device C3
-U 1 1 5F313280
-P 4900 1950
-F 0 "C3" V 4750 1950 50  0000 C CNN
-F 1 "C" V 5050 1950 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4938 1800 50  0001 C CNN
-F 3 "~" H 4900 1950 50  0001 C CNN
-	1    4900 1950
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	4750 1950 4550 1950
 Wire Wire Line
@@ -258,8 +236,8 @@ L transistor_board-rescue:C-Device C6
 U 1 1 5F24F95F
 P 3650 1050
 F 0 "C6" V 3398 1050 50  0000 C CNN
-F 1 "C" V 3489 1050 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3688 900 50  0001 C CNN
+F 1 "10 uF" V 3489 1050 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 3688 900 50  0001 C CNN
 F 3 "~" H 3650 1050 50  0001 C CNN
 	1    3650 1050
 	-1   0    0    1   
@@ -287,7 +265,7 @@ Wire Wire Line
 Wire Wire Line
 	5400 2500 5400 3750
 Wire Wire Line
-	3650 3850 4150 3850
+	3000 3850 4150 3850
 Connection ~ 4150 3850
 Wire Wire Line
 	4150 3850 4750 3850
@@ -297,20 +275,20 @@ Connection ~ 5400 3750
 Wire Wire Line
 	5400 3750 5400 3850
 Wire Wire Line
-	3650 3250 6600 3250
+	3000 3250 6600 3250
 Wire Wire Line
 	6600 3250 6600 3450
 Wire Wire Line
-	3650 3350 6400 3350
+	3000 3350 6400 3350
 Wire Wire Line
 	6400 3350 6400 4400
 Wire Wire Line
-	3650 3450 4000 3450
+	3000 3450 4000 3450
 Wire Wire Line
 	4000 3450 4000 3750
 Connection ~ 4000 3750
 Wire Wire Line
-	4000 3750 3650 3750
+	4000 3750 3000 3750
 Wire Wire Line
 	5800 1250 5800 2450
 Wire Wire Line
@@ -379,42 +357,15 @@ Wire Wire Line
 $Comp
 L transistor_board-rescue:Conn_01x10-Connector_Generic J1
 U 1 1 5F26F492
-P 3450 3550
-F 0 "J1" H 3368 2825 50  0000 C CNN
-F 1 "Conn_01x10" H 3368 2916 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical" H 3450 3550 50  0001 C CNN
-F 3 "~" H 3450 3550 50  0001 C CNN
-	1    3450 3550
+P 2800 3550
+F 0 "J1" H 2718 2825 50  0000 C CNN
+F 1 "Conn_01x10" H 2718 2916 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical" H 2800 3550 50  0001 C CNN
+F 3 "~" H 2800 3550 50  0001 C CNN
+	1    2800 3550
 	-1   0    0    1   
 $EndComp
-$Comp
-L transistor_board-rescue:D_x2_KCom_AAK-Device D3
-U 1 1 5F27964B
-P 9800 1800
-F 0 "D3" H 9800 1923 50  0000 C CNN
-F 1 "D_x2_KCom_AAK" H 9800 2014 50  0000 C CNN
-F 2 "digikey-footprints:SOT-23-3" H 9800 1800 50  0001 C CNN
-F 3 "~" H 9800 1800 50  0001 C CNN
-	1    9800 1800
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	9800 1600 9800 1450
-Wire Wire Line
-	9800 1450 9200 1450
-Wire Wire Line
-	9200 1450 9200 2250
-Wire Wire Line
-	9500 1800 9350 1800
-Wire Wire Line
-	9350 1800 9350 2900
 Connection ~ 9350 2900
-Wire Wire Line
-	9350 2900 9250 2900
-Wire Wire Line
-	10100 1800 10450 1800
-Wire Wire Line
-	10450 1800 10450 3850
 Wire Wire Line
 	10450 3850 10100 3850
 Connection ~ 10100 3850
@@ -433,7 +384,7 @@ L transistor_board-rescue:R-Device R3
 U 1 1 5F61F0F4
 P 8300 1600
 F 0 "R3" V 8200 1550 50  0000 L CNN
-F 1 "R" V 8300 1600 50  0000 L CNN
+F 1 "1K5" V 8300 1550 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8230 1600 50  0001 C CNN
 F 3 "~" H 8300 1600 50  0001 C CNN
 	1    8300 1600
@@ -444,7 +395,7 @@ L transistor_board-rescue:R-Device R2
 U 1 1 5F620284
 P 8300 1150
 F 0 "R2" V 8200 1100 50  0000 L CNN
-F 1 "R" V 8300 1150 50  0000 L CNN
+F 1 "10K" V 8300 1100 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8230 1150 50  0001 C CNN
 F 3 "~" H 8300 1150 50  0001 C CNN
 	1    8300 1150
@@ -482,14 +433,12 @@ Wire Wire Line
 	8300 500  8300 1000
 NoConn ~ 7700 1350
 Wire Wire Line
-	4450 3150 3650 3150
+	4450 3150 3000 3150
 Wire Wire Line
 	4450 2200 4450 3150
 Wire Wire Line
-	3650 3050 4900 3050
+	3000 3050 4900 3050
 NoConn ~ 6600 1650
-Wire Wire Line
-	5400 2250 9200 2250
 NoConn ~ 6600 1050
 $Comp
 L Device:LED D2
@@ -521,30 +470,94 @@ $EndComp
 Wire Wire Line
 	5200 1300 5200 1250
 $Comp
-L Device:Q_NIGBT_GCEC Q1
-U 1 1 606B90B8
+L Device:Q_NIGBT_GCE Q1
+U 1 1 61683727
 P 9050 3250
-F 0 "Q1" H 9338 3296 50  0000 L CNN
-F 1 "Q_NIGBT_GCEC" H 9338 3205 50  0000 L CNN
+F 0 "Q1" H 9240 3296 50  0000 L CNN
+F 1 "Q_NIGBT_GCE" H 9240 3205 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin2" H 9250 3350 50  0001 C CNN
 F 3 "~" H 9050 3250 50  0001 C CNN
 	1    9050 3250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9250 3050 9250 2900
-Connection ~ 9250 2900
-Wire Wire Line
-	9250 2900 9150 2900
+	9150 2900 9350 2900
 $Comp
-L Device:Q_NIGBT_GCEC Q2
-U 1 1 606C00AA
+L Device:Q_NIGBT_GCE Q2
+U 1 1 61685EEE
 P 9050 4150
-F 0 "Q2" H 9338 4196 50  0000 L CNN
-F 1 "Q_NIGBT_GCEC" H 9338 4105 50  0000 L CNN
+F 0 "Q2" H 9240 4196 50  0000 L CNN
+F 1 "Q_NIGBT_GCE" H 9240 4105 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin2" H 9250 4250 50  0001 C CNN
 F 3 "~" H 9050 4150 50  0001 C CNN
 	1    9050 4150
 	1    0    0    -1  
+$EndComp
+Text Label 3300 3050 0    50   ~ 0
+AC2
+Text Label 3300 3150 0    50   ~ 0
+AC1
+Text Label 3300 3950 0    50   ~ 0
+Cap-
+Text Label 3300 3850 0    50   ~ 0
+Cap+
+Text Label 3300 3750 0    50   ~ 0
+Com
+Text Label 3300 3650 0    50   ~ 0
+Forward
+Text Label 3300 3550 0    50   ~ 0
+Reverse
+Text Label 3300 3250 0    50   ~ 0
+Lights_reverse
+Text Label 3300 3350 0    50   ~ 0
+Lights_forward
+$Comp
+L eit_proprietary:ESP32-cam U2
+U 1 1 616A1FAC
+P 7150 1450
+F 0 "U2" H 7150 2115 50  0000 C CNN
+F 1 "ESP32-cam" H 7150 2024 50  0000 C CNN
+F 2 "eit_footprints:ESP32-CAM-10pin" H 6300 3100 50  0001 C CNN
+F 3 "" H 6300 3100 50  0001 C CNN
+	1    7150 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L transistor_board-rescue:C-Device C3
+U 1 1 616A7030
+P 4900 1950
+F 0 "C3" V 4648 1950 50  0000 C CNN
+F 1 "10 uF" V 4739 1950 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 4938 1800 50  0001 C CNN
+F 3 "~" H 4900 1950 50  0001 C CNN
+	1    4900 1950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5400 2250 9200 2250
+Wire Wire Line
+	9200 1450 9200 2250
+Wire Wire Line
+	9800 1600 9800 1450
+Wire Wire Line
+	10100 1800 10450 1800
+Wire Wire Line
+	10450 1800 10450 3850
+Wire Wire Line
+	9800 1450 9200 1450
+Wire Wire Line
+	9350 1800 9350 2900
+Wire Wire Line
+	9500 1800 9350 1800
+$Comp
+L transistor_board-rescue:D_x2_KCom_AAK-Device D3
+U 1 1 5F27964B
+P 9800 1800
+F 0 "D3" H 9800 1923 50  0000 C CNN
+F 1 "D_x2_KCom_AAK" H 9800 2014 50  0000 C CNN
+F 2 "digikey-footprints:SOT-23-3" H 9800 1800 50  0001 C CNN
+F 3 "~" H 9800 1800 50  0001 C CNN
+	1    9800 1800
+	-1   0    0    1   
 $EndComp
 $EndSCHEMATC

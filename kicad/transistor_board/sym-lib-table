@@ -1,4 +1,4 @@
 (sym_lib_table
-  (lib (name drekkar_com)(type Legacy)(uri ${KIPRJMOD}/drekkar_com.lib)(options "")(descr ""))
   (lib (name transistor_board-rescue)(type Legacy)(uri ${KIPRJMOD}/transistor_board-rescue.lib)(options "")(descr ""))
+  (lib (name eit_proprietary)(type Legacy)(uri /home/henrik/git/drekkar_kicad/eit_kicad_libraries/eit_symbol_library/eit_proprietary.lib)(options "")(descr ""))
 )

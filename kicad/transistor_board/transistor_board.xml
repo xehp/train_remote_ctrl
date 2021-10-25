@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/home/henrik/git/esp32_projects/kicad/transistor_board/transistor_board.sch</source>
+    <date>sön 24 okt 2021 23:05:42</date>
+    <tool>Eeschema 5.1.5+dfsg1-2build2</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date>2020-12-02</date>
+        <source>transistor_board.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="D1">
+      <value>D_Bridge_+-AA</value>
+      <footprint>Diode_SMD:Diode_Bridge_Vishay_DFS</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="transistor_board-rescue" part="D_Bridge_+-AA-Device" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F218132</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>R</value>
+      <footprint>Resistor_SMD:R_2512_6332Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="transistor_board-rescue" part="R-Device" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F21E564</tstamp>
+    </comp>
+    <comp ref="Q4">
+      <value>MMBF170</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://www.diodes.com/assets/Datasheets/ds30104.pdf</datasheet>
+      <libsource lib="transistor_board-rescue" part="MMBF170-Transistor_FET" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F2578EE</tstamp>
+    </comp>
+    <comp ref="Q3">
+      <value>MMBF170</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://www.diodes.com/assets/Datasheets/ds30104.pdf</datasheet>
+      <libsource lib="transistor_board-rescue" part="MMBF170-Transistor_FET" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F2BA0E0</tstamp>
+    </comp>
+    <comp ref="U3">
+      <value>LM7805_TO220</value>
+      <footprint>Package_TO_SOT_THT:TO-220-3_Vertical</footprint>
+      <datasheet>http://www.fairchildsemi.com/ds/LM/LM7805.pdf</datasheet>
+      <libsource lib="transistor_board-rescue" part="LM7805_TO220-Regulator_Linear" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F300908</tstamp>
+    </comp>
+    <comp ref="C5">
+      <value>1 uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="transistor_board-rescue" part="C-Device" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F3038BA</tstamp>
+    </comp>
+    <comp ref="C6">
+      <value>10 uF</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="transistor_board-rescue" part="C-Device" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F24F95F</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>Conn_01x10</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="transistor_board-rescue" part="Conn_01x10-Connector_Generic" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F26F492</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>1K5</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="transistor_board-rescue" part="R-Device" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F61F0F4</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="transistor_board-rescue" part="R-Device" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F620284</tstamp>
+    </comp>
+    <comp ref="D2">
+      <value>LED</value>
+      <footprint>LED_THT:LED_D3.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F9420FF</tstamp>
+    </comp>
+    <comp ref="Q1">
+      <value>Q_NIGBT_GCE</value>
+      <footprint>Package_TO_SOT_SMD:TO-252-3_TabPin2</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="Q_NIGBT_GCE" description="N-IGBT transistor, gate/collector/emitter"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61683727</tstamp>
+    </comp>
+    <comp ref="Q2">
+      <value>Q_NIGBT_GCE</value>
+      <footprint>Package_TO_SOT_SMD:TO-252-3_TabPin2</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="Q_NIGBT_GCE" description="N-IGBT transistor, gate/collector/emitter"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61685EEE</tstamp>
+    </comp>
+    <comp ref="U2">
+      <value>ESP32-cam</value>
+      <footprint>eit_footprints:ESP32-CAM</footprint>
+      <libsource lib="eit_proprietary" part="ESP32-cam" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>616A1FAC</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>10 uF</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="transistor_board-rescue" part="C-Device" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>616A7030</tstamp>
+    </comp>
+    <comp ref="D3">
+      <value>D_x2_KCom_AAK</value>
+      <footprint>digikey-footprints:SOT-23-3</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="transistor_board-rescue" part="D_x2_KCom_AAK-Device" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F27964B</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Device" part="LED">
+      <description>Light emitting diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Q_NIGBT_GCE">
+      <description>N-IGBT transistor, gate/collector/emitter</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">Q_NIGBT_GCE</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="input"/>
+        <pin num="2" name="C" type="passive"/>
+        <pin num="3" name="E" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="eit_proprietary" part="ESP32-cam">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ESP32-cam</field>
+      </fields>
+      <pins>
+        <pin num="1" name="5V" type="power_in"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="IO12" type="BiDi"/>
+        <pin num="4" name="IO13" type="BiDi"/>
+        <pin num="5" name="IO15" type="BiDi"/>
+        <pin num="6" name="IO14" type="BiDi"/>
+        <pin num="7" name="IO2" type="BiDi"/>
+        <pin num="8" name="IO4" type="BiDi"/>
+        <pin num="9" name="GND" type="power_in"/>
+        <pin num="10" name="U0T" type="output"/>
+        <pin num="11" name="U0R" type="input"/>
+        <pin num="12" name="VCC" type="power_out"/>
+        <pin num="13" name="GND" type="power_in"/>
+        <pin num="14" name="IO0" type="BiDi"/>
+        <pin num="15" name="IO16" type="BiDi"/>
+        <pin num="16" name="3V3" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="transistor_board-rescue" part="C-Device">
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C-Device</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="transistor_board-rescue" part="Conn_01x10-Connector_Generic">
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x10-Connector_Generic</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+        <pin num="9" name="Pin_9" type="passive"/>
+        <pin num="10" name="Pin_10" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="transistor_board-rescue" part="D_Bridge_+-AA-Device">
+      <footprints>
+        <fp>D*Bridge*</fp>
+        <fp>D*Rectifier*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Bridge_+-AA-Device</field>
+      </fields>
+      <pins>
+        <pin num="1" name="+" type="passive"/>
+        <pin num="2" name="-" type="passive"/>
+        <pin num="3" name="~~" type="passive"/>
+        <pin num="4" name="~~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="transistor_board-rescue" part="D_x2_KCom_AAK-Device">
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_x2_KCom_AAK-Device</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+        <pin num="3" name="K" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="transistor_board-rescue" part="LM7805_TO220-Regulator_Linear">
+      <footprints>
+        <fp>TO?220*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LM7805_TO220-Regulator_Linear</field>
+        <field name="Footprint">Package_TO_SOT_THT:TO-220-3_Vertical</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VI" type="power_in"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="VO" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="transistor_board-rescue" part="MMBF170-Transistor_FET">
+      <footprints>
+        <fp>SOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">MMBF170-Transistor_FET</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="input"/>
+        <pin num="2" name="S" type="passive"/>
+        <pin num="3" name="D" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="transistor_board-rescue" part="R-Device">
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R-Device</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Device">
+      <uri>/usr/share/kicad/library/Device.lib</uri>
+    </library>
+    <library logical="eit_proprietary">
+      <uri>/home/henrik/git/drekkar_kicad/eit_kicad_libraries/eit_symbol_library/eit_proprietary.lib</uri>
+    </library>
+    <library logical="transistor_board-rescue">
+      <uri>/home/henrik/git/esp32_projects/kicad/transistor_board/transistor_board-rescue.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="GND">
+      <node ref="Q3" pin="2"/>
+      <node ref="Q4" pin="2"/>
+      <node ref="Q2" pin="3"/>
+      <node ref="Q1" pin="3"/>
+      <node ref="D2" pin="1"/>
+      <node ref="C3" pin="2"/>
+      <node ref="U2" pin="2"/>
+      <node ref="U3" pin="2"/>
+      <node ref="D1" pin="2"/>
+      <node ref="C5" pin="2"/>
+      <node ref="J1" pin="1"/>
+      <node ref="C6" pin="1"/>
+      <node ref="R3" pin="2"/>
+    </net>
+    <net code="2" name="Net-(U2-Pad8)">
+      <node ref="U2" pin="8"/>
+    </net>
+    <net code="3" name="Net-(U2-Pad12)">
+      <node ref="U2" pin="12"/>
+    </net>
+    <net code="4" name="Net-(U2-Pad11)">
+      <node ref="U2" pin="11"/>
+    </net>
+    <net code="5" name="Net-(U2-Pad10)">
+      <node ref="U2" pin="10"/>
+    </net>
+    <net code="6" name="Net-(U2-Pad9)">
+      <node ref="U2" pin="9"/>
+    </net>
+    <net code="7" name="Net-(U2-Pad14)">
+      <node ref="U2" pin="14"/>
+    </net>
+    <net code="8" name="Net-(R2-Pad2)">
+      <node ref="R3" pin="1"/>
+      <node ref="U2" pin="15"/>
+      <node ref="R2" pin="2"/>
+    </net>
+    <net code="9" name="Net-(U2-Pad13)">
+      <node ref="U2" pin="13"/>
+    </net>
+    <net code="10" name="Net-(U2-Pad7)">
+      <node ref="U2" pin="7"/>
+    </net>
+    <net code="11" name="Net-(C5-Pad1)">
+      <node ref="U2" pin="16"/>
+      <node ref="U3" pin="3"/>
+      <node ref="C5" pin="1"/>
+      <node ref="D2" pin="2"/>
+    </net>
+    <net code="12" name="Net-(Q1-Pad1)">
+      <node ref="U2" pin="4"/>
+      <node ref="Q1" pin="1"/>
+    </net>
+    <net code="13" name="Net-(Q4-Pad1)">
+      <node ref="U2" pin="5"/>
+      <node ref="Q4" pin="1"/>
+    </net>
+    <net code="14" name="/Com">
+      <node ref="J1" pin="3"/>
+      <node ref="J1" pin="6"/>
+      <node ref="C3" pin="1"/>
+      <node ref="R1" pin="2"/>
+      <node ref="D3" pin="3"/>
+      <node ref="D1" pin="1"/>
+    </net>
+    <net code="15" name="Net-(Q2-Pad1)">
+      <node ref="U2" pin="3"/>
+      <node ref="Q2" pin="1"/>
+    </net>
+    <net code="16" name="Net-(U2-Pad1)">
+      <node ref="U2" pin="1"/>
+    </net>
+    <net code="17" name="/Forward">
+      <node ref="J1" pin="4"/>
+      <node ref="Q1" pin="2"/>
+      <node ref="D3" pin="2"/>
+    </net>
+    <net code="18" name="/Reverse">
+      <node ref="D3" pin="1"/>
+      <node ref="Q2" pin="2"/>
+      <node ref="J1" pin="5"/>
+    </net>
+    <net code="19" name="/Lights_reverse">
+      <node ref="J1" pin="8"/>
+      <node ref="Q4" pin="3"/>
+    </net>
+    <net code="20" name="/Lights_forward">
+      <node ref="J1" pin="7"/>
+      <node ref="Q3" pin="3"/>
+    </net>
+    <net code="21" name="Net-(Q3-Pad1)">
+      <node ref="U2" pin="6"/>
+      <node ref="Q3" pin="1"/>
+    </net>
+    <net code="22" name="/AC1">
+      <node ref="J1" pin="9"/>
+      <node ref="D1" pin="3"/>
+    </net>
+    <net code="23" name="/AC2">
+      <node ref="J1" pin="10"/>
+      <node ref="D1" pin="4"/>
+    </net>
+    <net code="24" name="/Cap+">
+      <node ref="R2" pin="1"/>
+      <node ref="C6" pin="2"/>
+      <node ref="U3" pin="1"/>
+      <node ref="R1" pin="1"/>
+      <node ref="J1" pin="2"/>
+    </net>
+  </nets>
+</export>
